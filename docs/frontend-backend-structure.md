@@ -1,0 +1,147 @@
+# Proposed Folder Structure
+
+## Frontend structure
+
+/project-root
+  /frontend
+    /app
+      /(auth)
+        /login
+        /register
+        /forgot-password
+      /(customer)
+        /dashboard
+        /devices
+        /contacts
+        /alerts
+        /orders
+        /subscriptions
+        /profile
+      /(admin)
+        /dashboard
+        /users
+        /devices
+        /events
+        /payments
+        /support
+      /globals.css
+      /layout.tsx
+      /page.tsx
+    /components
+      /ui
+      /forms
+      /dashboard
+      /tables
+      /modals
+    /features
+      /auth
+      /devices
+      /contacts
+      /alerts
+      /commerce
+      /subscriptions
+      /admin
+    /lib
+      /api
+      /utils
+      /validators
+      /config
+    /services
+      /auth
+      /devices
+      /orders
+      /notifications
+      /admin
+    /hooks
+      /useAuth
+      /useDevice
+      /useNotifications
+    /store
+      /auth
+      /device
+      /checkout
+    /types
+      /api
+      /domain
+    /public
+      /images
+      /icons
+    /styles
+      /tailwind.css
+    package.json
+    tsconfig.json
+    next.config.js
+    tailwind.config.js
+
+## Backend structure
+
+/project-root
+  /backend
+    /app
+      /Console
+        /Commands
+      /Exceptions
+      /Http
+        /Controllers
+          /Api
+            /V1
+              /AuthController.php
+              /UserController.php
+              /DeviceController.php
+              /EmergencyContactController.php
+              /LocationController.php
+              /EventController.php
+              /NotificationController.php
+              /ProductController.php
+              /OrderController.php
+              /SubscriptionController.php
+              /AdminController.php
+        /Middleware
+        /Requests
+          /Auth
+          /Device
+          /Event
+          /Order
+        /Resources
+      /Jobs
+      /Listeners
+      /Events
+      /Mail
+      /Models
+      /Notifications
+      /Policies
+      /Providers
+      /Services
+        /Auth
+        /Devices
+        /Events
+        /Notifications
+        /Billing
+        /Subscriptions
+        /Location
+      /Rules
+    /config
+    /database
+      /migrations
+      /seeders
+      /factories
+    /routes
+      api.php
+    /storage
+    /tests
+      /Feature
+      /Unit
+    /vendor
+    .env.example
+    artisan
+    composer.json
+
+## Database folder
+
+/project-root
+  /database
+    /schema
+    /migrations
+    /seed
+    /backup
+    /docs

@@ -1,0 +1,10 @@
+export function LoadingState({ label = 'Loading...' }: { label?: string }) {
+  return (
+    <div className="flex min-h-[200px] items-center justify-center rounded-xl border border-slate-700 bg-slate-950/40 p-6 text-slate-300">
+      <div className="flex items-center gap-3">
+        <span className="h-4 w-4 animate-spin rounded-full border-2 border-sky-400 border-t-transparent" />
+        <span>{label}</span>
+      </div>
+    </div>
+  );
+}
